@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo yum install httpd wget unzip -y
+systemctl start httpd
+systemctl enable httpd
+mkdir -p /tmp/web/
+cd /tem/web/
+wget ürl.zip
+unzip url.zip
+sudo cp -r url/* /var/wwww/html/
+ststemctl restart httpd
